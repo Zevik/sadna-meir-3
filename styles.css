@@ -51,6 +51,13 @@ header {
     animation: fadeInUp 1s ease-out;
 }
 
+.header-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .intro-text {
     max-width: 800px;
     margin: 3rem auto 0;
