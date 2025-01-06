@@ -159,14 +159,15 @@ h2 {
 }
 
 .techniques-grid {
-    display: grid;
-    grid-template-columns: 1fr; /* Default to single column */
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem; /* Use flex's gap instead of grid's */
 }
 
 @media (min-width: 768px) {
     .techniques-grid {
-        grid-template-columns: 1fr 1fr; /* Two columns on desktop */
+        /* grid-template-columns: 1fr 1fr; */ /* Remove this line */
     }
 }
 
@@ -591,4 +592,21 @@ footer {
 
 .registration {
     padding-top: 1rem;
+}
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 50%, var(--secondary-light) 100%);
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    margin: 2rem 0;
+}
+
+.video-section video {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
