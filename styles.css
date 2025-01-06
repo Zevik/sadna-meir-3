@@ -180,13 +180,14 @@ h2 {
 
 .meeting-title {
     color: var(--primary);
-    font-size: 0.75em; /* Reduce text size to 75% */
-    margin: 0; /* Remove default margins */
+    font-size: 0.75em; /* 75% of original size */
+    font-weight: normal; /* Remove bold */
+    margin: 0;
 }
 
 .meeting-card {
     background: white;
-    padding: 0.75rem 1rem; /* Reduce vertical padding */
+    padding: 0.5rem 1rem; /* Reduced vertical padding */
     border-radius: 15px;
     position: relative;
     box-shadow: var(--card-shadow);
