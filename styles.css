@@ -1,10 +1,11 @@
 :root {
-    --primary: #6c5ce7;
-    --primary-light: #a29bfe;
+    --primary: #ff6b6b; /* Red */
+    --primary-light: #ff9f43; /* Orange */
+    --secondary-light: #feca57; /* Yellow */
     --text: #2d3436;
     --text-light: #636e72;
     --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    --card-hover-shadow: 0 10px 30px rgba(108, 92, 231, 0.15);
+    --card-hover-shadow: 0 10px 30px rgba(255, 107, 107, 0.15);
 }
 
 @keyframes fadeInUp {
@@ -42,11 +43,11 @@ body {
 header {
     text-align: center;
     padding: 6rem 1rem 8rem;
-    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 50%, var(--secondary-light) 100%);
     border-radius: 0 0 100px 100px;
     margin-bottom: 6rem;
     color: white;
-    box-shadow: 0 4px 30px rgba(108, 92, 231, 0.2);
+    box-shadow: 0 4px 30px rgba(255, 107, 107, 0.2);
     animation: fadeInUp 1s ease-out;
 }
 
@@ -270,7 +271,7 @@ footer {
 }
 
 .workshop-details {
-    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 50%, var(--secondary-light) 100%);
     padding: 2rem 2rem 4rem; /* עדכון padding */
     color: white;
     margin: 2rem 0; /* הקטנת margin */
