@@ -159,10 +159,15 @@ h2 {
 
 .techniques-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Change to single column */
+    grid-template-columns: 1fr; /* Default to single column */
     gap: 2rem;
 }
 
+@media (min-width: 768px) {
+    .techniques-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns on desktop */
+    }
+}
 
 .meeting-card {
     background: white;
