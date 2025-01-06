@@ -602,7 +602,8 @@ footer {
     background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 50%, var(--secondary-light) 100%);
     border-radius: 20px;
     box-shadow: var(--card-shadow);
-    margin: 2rem 0;
+    margin: 2rem auto; /* Center the section horizontally */
+    max-width: 800px; /* Limit the width of the section */
 }
 
 .video-section video {
