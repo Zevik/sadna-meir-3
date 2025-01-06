@@ -257,7 +257,11 @@ h2 {
 .contact-info {
     text-align: center;
     font-size: 1.2rem;
-    line-height: 1.6;
+    line-height: 2; /* Increased line height for better spacing */
+}
+
+.contact-info p {
+    margin: 0.5rem 0; /* Add some vertical spacing between lines */
 }
 
 .phone-link {
