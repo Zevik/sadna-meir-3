@@ -166,16 +166,18 @@ h2 {
 }
 
 .techniques-grid {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
-    align-items: flex-end; /* Change from center to flex-end to align to right */
-    gap: 2rem;
-    width: 100%; /* Take full width of container */
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin: 0 auto;
 }
 
 @media (min-width: 768px) {
     .techniques-grid {
-        /* grid-template-columns: 1fr 1fr; */ /* Remove this line */
+        /* Maintain vertical layout but centered */
+        align-items: center;
     }
 }
 
@@ -187,35 +189,25 @@ h2 {
 }
 
 .meeting-card {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: white;
-    padding: 2rem;
     border-radius: 15px;
-    position: relative;
     box-shadow: var(--card-shadow);
     transition: transform 0.3s ease;
 }
 
 @media (min-width: 768px) {
     .meeting-card {
-        width: 400px; /* Fixed width on desktop */
-        margin-right: 0; /* Ensure cards stick to right side */
+        max-width: 600px;
     }
-}
-
-.meeting-number {
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    background: var(--primary);
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.2rem;
 }
 
 .contact-form {
@@ -483,9 +475,8 @@ footer {
     }
     
      .techniques-grid {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-        gap: 1.5rem;
+        width: 100%;
+        padding: 0 1rem;
     }
     
     .contact-form {
@@ -536,6 +527,16 @@ footer {
     
     .price-tag strong {
         font-size: 1.6rem;
+    }
+    
+    .meeting-card {
+        margin: 0.5rem 0 !important;
+    }
+    
+    .meeting-title {
+        font-size: 1.1rem !important;
+        text-align: center;
+        width: 100%;
     }
 }
 
