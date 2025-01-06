@@ -271,18 +271,18 @@ h2 {
 
 .contact-info {
     text-align: center;
-    font-size: 1.2rem;
-    line-height: 2; /* Increased line height for better spacing */
+    font-size: clamp(2rem, 5vw, 3rem); /* Match section title size */
+    line-height: 1.5;
 }
 
 .contact-info p {
-    margin: 0.5rem 0; /* Add some vertical spacing between lines */
+    margin: 0.75rem 0; /* Adjusted spacing between lines */
 }
 
 .phone-link {
     color: var(--primary);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal; /* Changed from bold */
     transition: opacity 0.3s ease;
 }
 
