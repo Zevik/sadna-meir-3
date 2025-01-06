@@ -253,6 +253,23 @@ h2 {
     transform: scale(1.02);
 }
 
+.contact-info {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.phone-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.phone-link:hover {
+    opacity: 0.8;
+}
+
 footer {
     background: var(--primary);
     color: white;
