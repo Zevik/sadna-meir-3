@@ -182,7 +182,7 @@ h2 {
     color: var(--primary);
     font-size: 0.75em; /* 75% of original size */
     font-weight: normal; /* Remove bold */
-    margin: 0;
+    text-align: center; /* Center text */
 }
 
 .meeting-card {
@@ -193,6 +193,11 @@ h2 {
     box-shadow: var(--card-shadow);
     transition: transform 0.3s ease;
     max-width: 400px;
+    min-height: 60px; /* Add minimum height for vertical centering */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
 }
 
 .meeting-number {
