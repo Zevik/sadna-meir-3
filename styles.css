@@ -171,13 +171,18 @@ h2 {
     }
 }
 
+.meeting-title {
+    color: var(--primary); /* Match the color of "למי מיועד" */
+}
+
 .meeting-card {
     background: white;
-    padding: 2rem;
+    padding: 1.5rem; /* Adjust padding to make cards less tall */
     border-radius: 15px;
     position: relative;
     box-shadow: var(--card-shadow);
     transition: transform 0.3s ease;
+    max-width: 400px; /* Make cards narrower */
 }
 
 .meeting-number {
