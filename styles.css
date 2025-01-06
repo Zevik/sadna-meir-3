@@ -68,7 +68,7 @@ header {
 .intro-text p {
     margin: 0;
     opacity: 0;
-    font-size: clamp(2.2rem, 5vw, 2.6rem); /* Doubled the font size */
+    font-size: 2.2rem; /* Set a fixed doubled font size */
     line-height: 1.8;
     text-align: center;
     animation: fadeInText 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
