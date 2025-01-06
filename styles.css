@@ -572,6 +572,58 @@ footer {
 }
 
 .price-section {
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 50%, var(--secondary-light) 100%);
+    padding: 2rem 2rem 4rem;
+    color: white;
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+}
+
+.price-section .section-title {
+    color: white;
+    margin: 0 0 1.5rem;
+}
+
+.price-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.price-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.price-tag {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.price-tag strong {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.price-note {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    color: white;
+}
+
+.price-section {
     padding: 1rem 2rem;
     margin: 2rem 0;
     text-align: center;
