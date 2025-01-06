@@ -161,7 +161,7 @@ h2 {
 .techniques-grid {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: stretch; /* Stretch items to fill the width */
     gap: 2rem; /* Use flex's gap instead of grid's */
 }
 
