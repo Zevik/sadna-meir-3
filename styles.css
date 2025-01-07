@@ -260,6 +260,7 @@ h2 {
 }
 
 .contact-info p {
+    font-size: clamp(1.2rem, 3vw, 2rem); /* Match section title size */
     margin: 0.75rem 0; /* Adjusted spacing between lines */
 }
 
